@@ -21,7 +21,8 @@ const Home = () => {
     <Header>
       <Link to="/">Home</Link>
       <Link to="/rain">Rain</Link>
-      <Link to="cube">Cube</Link>
+      <Link to="/cube">Cube</Link>
+      <Link to="/loading">Loading</Link>
     </Header>
   );
 };
