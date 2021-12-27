@@ -1,9 +1,9 @@
-import React from "react";
-import { RecoilRoot } from "recoil";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./App.css";
-import AlertModal from "./components/AlertModal";
-import { Home, Rain, Cube, Loading, Button } from "./pages";
+import React from 'react';
+import { RecoilRoot } from 'recoil';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
+import AlertModal from './components/AlertModal';
+import { Home, Rain, Cube, Loading, Button } from './pages';
 
 const App = () => {
   return (

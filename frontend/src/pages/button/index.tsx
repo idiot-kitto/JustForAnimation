@@ -1,6 +1,6 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes } from 'styled-components';
 
-import useAlertModal from "../../hooks/useAlertModal";
+import useAlertModal from '../../hooks/useAlertModal';
 
 const ButtonBackground = styled.div`
   display: flex;
@@ -26,37 +26,35 @@ const ButtonContainer = styled.a<{ color: string; value: number }>`
   transition: 1s;
   text-decoration: none;
   overflow: hidden;
-  -webkit-box-reflect: below 1px
-    linear-gradient(transparent, transparent, #0004);
+  -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0004);
 
   &:hover {
-    background: ${(props) => props.color};
-    box-shadow: 0 0 10px ${(props) => props.color},
-      0 0 30px ${(props) => props.color}, 0 0 60px ${(props) => props.color},
-      0 0 100px ${(props) => props.color};
+    background: ${props => props.color};
+    box-shadow: 0 0 10px ${props => props.color}, 0 0 30px ${props => props.color}, 0 0 60px ${props => props.color},
+      0 0 100px ${props => props.color};
 
     &::before {
       width: 120%;
     }
 
     &::after {
-      background: ${(props) => props.color};
+      background: ${props => props.color};
     }
   }
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     width: 40px;
     height: 400%;
-    background: ${(props) => props.color};
+    background: ${props => props.color};
     transition: 1s;
     animation: ${Animation} 2s linear infinite;
-    animation-delay: calc(0.33s * ${(props) => props.value});
+    animation-delay: calc(0.33s * ${props => props.value});
   }
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     inset: 4px;
     background: #0e1538;
@@ -84,28 +82,13 @@ const Button = () => {
 
   return (
     <ButtonBackground>
-      <ButtonContainer
-        href="#"
-        onClick={() => showAlert("Button Clicked!", "#ff22bb")}
-        color="#ff22bb"
-        value={0}
-      >
+      <ButtonContainer href="#" onClick={() => showAlert('Button Clicked!', '#ff22bb')} color="#ff22bb" value={0}>
         <ButtonText>Button</ButtonText>
       </ButtonContainer>
-      <ButtonContainer
-        href="#"
-        onClick={() => showAlert("Button Clicked!", "#00ccff")}
-        color="#00ccff"
-        value={1}
-      >
+      <ButtonContainer href="#" onClick={() => showAlert('Button Clicked!', '#00ccff')} color="#00ccff" value={1}>
         <ButtonText>Button</ButtonText>
       </ButtonContainer>
-      <ButtonContainer
-        href="#"
-        onClick={() => showAlert("Button Clicked!", "#22e622")}
-        color="#22e622"
-        value={2}
-      >
+      <ButtonContainer href="#" onClick={() => showAlert('Button Clicked!', '#22e622')} color="#22e622" value={2}>
         <ButtonText>Button</ButtonText>
       </ButtonContainer>
     </ButtonBackground>

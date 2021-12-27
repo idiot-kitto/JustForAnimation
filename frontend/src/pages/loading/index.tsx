@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes } from 'styled-components';
 
 const LoadingContainer = styled.div`
   position: relative;
@@ -24,7 +24,7 @@ const Loader = styled.div`
   animation: ${Animation} 2s linear infinite;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -38,7 +38,7 @@ const Loader = styled.div`
   }
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 50%;
@@ -48,9 +48,8 @@ const Loader = styled.div`
     background: #00fff9;
     border-radius: 50%;
     z-index: 10;
-    box-shadow: 0 0 10px #00fff9, 0 0 20px #00fff9, 0 0 30px #00fff9,
-      0 0 40px #00fff9, 0 0 50px #00fff9, 0 0 60px #00fff9, 0 0 70px #00fff9,
-      0 0 80px #00fff9, 0 0 90px #00fff9, 0 0 100px #00fff9;
+    box-shadow: 0 0 10px #00fff9, 0 0 20px #00fff9, 0 0 30px #00fff9, 0 0 40px #00fff9, 0 0 50px #00fff9,
+      0 0 60px #00fff9, 0 0 70px #00fff9, 0 0 80px #00fff9, 0 0 90px #00fff9, 0 0 100px #00fff9;
   }
 `;
 

@@ -1,12 +1,9 @@
-import styled from "styled-components";
-import { useRecoilValue } from "recoil";
+import styled from 'styled-components';
+import { useRecoilValue } from 'recoil';
 
-import { alertState } from "../../recoil";
+import { alertState } from '../../recoil';
 
-const AlertModalContainer = styled.div<{
-  modalState: boolean;
-  bgColor: string;
-}>`
+const AlertModalContainer = styled.div<{ modalState: boolean; bgColor: string }>`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,10 +11,10 @@ const AlertModalContainer = styled.div<{
   height: 50px;
 
   position: fixed;
-  top: ${(props) => (!props.modalState ? "-70px" : "5px")};
+  top: ${props => (!props.modalState ? '-70px' : '5px')};
   left: 50%;
 
-  background-color: ${(props) => props.bgColor};
+  background-color: ${props => props.bgColor};
   border-radius: 8px;
   color: white;
   letter-spacing: 4px;

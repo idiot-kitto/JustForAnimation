@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes } from 'styled-components';
 
 const RainBackground = styled.div`
   position: absolute;
@@ -19,10 +19,7 @@ const Animation = keyframes`
 
 const RainDrop = styled.div`
   position: absolute;
-  background: linear-gradient(
-    transparent,
-    ${() => "#" + Math.round(Math.random() * 0xffffff).toString(16)}
-  );
+  background: linear-gradient(transparent, ${() => '#' + Math.round(Math.random() * 0xffffff).toString(16)});
   height: 200px;
   width: ${() => Math.random() * 5}px;
   left: ${() => Math.random() * window.innerWidth}px;
