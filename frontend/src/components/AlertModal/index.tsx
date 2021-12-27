@@ -14,7 +14,7 @@ const AlertModalContainer = styled.div<{
   height: 50px;
 
   position: fixed;
-  top: ${(props) => (!props.modalState ? "-70px" : "30px")};
+  top: ${(props) => (!props.modalState ? "-70px" : "5px")};
   left: 50%;
 
   background-color: ${(props) => props.bgColor};
