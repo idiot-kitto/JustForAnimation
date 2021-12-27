@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes } from 'styled-components';
 
 const Animation = keyframes`
   0% { transform: rotateX(-30deg) rotateY(0deg); }
@@ -27,7 +27,7 @@ const CubeTop = styled.div`
   transform: rotateX(90deg) translateZ(150px);
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -36,9 +36,8 @@ const CubeTop = styled.div`
     background: #0f0;
     transform: translateZ(-380px);
     filter: blur(20px);
-    box-shadow: 0 0 120px rgba(0, 255, 0, 0.2), 0 0 200px rgba(0, 255, 0, 0.4),
-      0 0 300px rgba(0, 255, 0, 0.6), 0 0 400px rgba(0, 255, 0, 0.8),
-      0 0 500px rgba(0, 255, 0, 1);
+    box-shadow: 0 0 120px rgba(0, 255, 0, 0.2), 0 0 200px rgba(0, 255, 0, 0.4), 0 0 300px rgba(0, 255, 0, 0.6),
+      0 0 400px rgba(0, 255, 0, 0.8), 0 0 500px rgba(0, 255, 0, 1);
   }
 `;
 
@@ -58,7 +57,7 @@ const CubeDivSpan = styled.span<{ value: number }>`
   width: 100%;
   height: 100%;
   background: linear-gradient(#151515, #00ec00);
-  transform: rotateY(calc(90deg * ${(props) => props.value})) translateZ(150px);
+  transform: rotateY(calc(90deg * ${props => props.value})) translateZ(150px);
 `;
 
 const Cube = () => {

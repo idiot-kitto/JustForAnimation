@@ -1,12 +1,12 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const Header = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  
+
   height: 20vh;
 
   a {
