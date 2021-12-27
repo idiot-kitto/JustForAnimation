@@ -1,7 +1,9 @@
 import styled, { keyframes } from "styled-components";
 
+import useAlertModal from "../../hooks/useAlertModal";
+
 const ButtonBackground = styled.div`
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -78,15 +80,32 @@ const ButtonText = styled.span`
 `;
 
 const Button = () => {
+  const showAlert = useAlertModal();
+
   return (
     <ButtonBackground>
-      <ButtonContainer href="#" color="#ff22bb" value={0}>
+      <ButtonContainer
+        href="#"
+        onClick={() => showAlert("Button Clicked!", "#ff22bb")}
+        color="#ff22bb"
+        value={0}
+      >
         <ButtonText>Button</ButtonText>
       </ButtonContainer>
-      <ButtonContainer href="#" color="#00ccff" value={1}>
+      <ButtonContainer
+        href="#"
+        onClick={() => showAlert("Button Clicked!", "#00ccff")}
+        color="#00ccff"
+        value={1}
+      >
         <ButtonText>Button</ButtonText>
       </ButtonContainer>
-      <ButtonContainer href="#" color="#22e622" value={2}>
+      <ButtonContainer
+        href="#"
+        onClick={() => showAlert("Button Clicked!", "#22e622")}
+        color="#22e622"
+        value={2}
+      >
         <ButtonText>Button</ButtonText>
       </ButtonContainer>
     </ButtonBackground>
