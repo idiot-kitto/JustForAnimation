@@ -24,6 +24,7 @@ const Home = () => {
       <Link to="/cube">Cube</Link>
       <Link to="/loading">Loading</Link>
       <Link to="/button">Button</Link>
+      <Link to="/search">Search</Link>
     </Header>
   );
 };
