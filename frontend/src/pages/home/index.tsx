@@ -25,6 +25,7 @@ const Home = () => {
       <Link to="/loading">Loading</Link>
       <Link to="/button">Button</Link>
       <Link to="/search">Search</Link>
+      <Link to="/scattering">Scattering</Link>
     </Header>
   );
 };

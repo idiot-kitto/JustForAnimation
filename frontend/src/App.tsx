@@ -3,7 +3,7 @@ import { RecoilRoot } from 'recoil';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import AlertModal from './components/AlertModal';
-import { Home, Rain, Cube, Loading, Button, Search } from './pages';
+import { Home, Rain, Cube, Loading, Button, Search, Scattering } from './pages';
 
 const App = () => {
   return (
@@ -18,6 +18,7 @@ const App = () => {
           <Route path="/loading" element={<Loading />} />
           <Route path="/button" element={<Button />} />
           <Route path="/search" element={<Search />} />
+          <Route path="/scattering" element={<Scattering />} />
         </Routes>
       </Router>
     </RecoilRoot>
