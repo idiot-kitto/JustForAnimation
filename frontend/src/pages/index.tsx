@@ -4,5 +4,6 @@ import Cube from './cube';
 import Loading from './loading';
 import Button from './button';
 import Search from './search';
+import Scattering from './scattering';
 
-export { Home, Rain, Cube, Loading, Button, Search };
+export { Home, Rain, Cube, Loading, Button, Search, Scattering };
